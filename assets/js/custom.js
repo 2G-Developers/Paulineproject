@@ -29,6 +29,15 @@ $(document).ready(function() {
   $("#date-picker").datepicker();
 });
 
+function rotateCard(btn) {
+  var $card = $(btn).closest(".card");
+  if ($card.hasClass("hover")) {
+    $card.removeClass("hover");
+  } else {
+    $card.addClass("hover");
+  }
+}
+
 // Data Picker Initialization
 // $(".datepicker").pickadate();
 
@@ -105,11 +114,11 @@ $(".owl-carousel").owlCarousel({
       dots: true
     },
     960: {
-      items: 3,
+      items: 4,
       dots: true
     },
     1200: {
-      items: 3,
+      items: 5,
       dots: true
     }
   }
