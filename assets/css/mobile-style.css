@@ -71,6 +71,15 @@
   }
 }
 @media only screen and (max-width: 425px) {
+  main {
+    background: url("../img/bg1.jpg") no-repeat center center fixed;
+    background-position: 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
   .bd-example .carousel-item {
     height: 50vh;
   }
