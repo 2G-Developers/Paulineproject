@@ -782,7 +782,7 @@ section .section-title {
 } */
 
 main {
-  background: url("../img/bg1.jpg") no-repeat 50% 0 fixed;
+  background: url("../img/bg1.jpg") repeat 50% 0 fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
