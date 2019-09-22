@@ -781,6 +781,15 @@ section .section-title {
   color: white !important;
 } */
 
+main {
+  background: url("../img/bg1.jpg") repeat center center fixed;
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .container {
   background: #fff;
 }
