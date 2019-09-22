@@ -3,6 +3,14 @@
     padding-left: 1rem;
   }
 
+  .bd-example .carousel-item {
+    height: 100vh;
+  }
+
+  .bd-example .carousel-item img {
+    height: 100vh;
+  }
+
   .section-1 .row .col-md-6 .panel {
     position: initial;
     width: initial;
@@ -54,17 +62,63 @@
   }
 }
 @media only screen and (max-width: 425px) {
+  .bd-example .carousel-item {
+    height: 50vh;
+  }
+
+  .bd-example .carousel-item img {
+    height: 50vh;
+  }
   footer .row .col-md-2 {
     margin-top: 8vmin;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  .section-6 .title::before {
+    transform: translateY(49px);
+  }
+
+  .bd-example .carousel-item {
+    height: 50vh;
+  }
+
+  .bd-example .carousel-item img {
+    height: 50vh;
+  }
   .section-4 .card {
     width: 18rem;
   }
 
   .section-4 .carousel-inner {
     margin-left: -14vmin;
+  }
+
+  .section-6 h1 {
+    font-size: 1.75rem;
+  }
+
+  #team .title::before {
+    transform: translateY(49px);
+  }
+
+  #team h1 {
+    font-size: 1.75rem;
+  }
+
+  .section-5 .title::before {
+    transform: translateY(49px);
+  }
+
+  .section-5 h1 {
+    font-size: 1.75rem;
+  }
+
+  .section-1 .title::before {
+    transform: translateY(49px);
+  }
+
+  .section-1 h1 {
+    font-size: 1.75rem;
   }
 }

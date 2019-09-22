@@ -115,14 +115,6 @@ section {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.bd-example .carousel-item {
-  height: 100vh;
-}
-
-.bd-example .carousel-item img {
-  height: 100vh;
-}
-
 .bd-example .carousel-caption {
   bottom: 0;
   top: 50%;
@@ -811,6 +803,14 @@ section .section-title {
 }
 
 /* Contact */
+
+#contact {
+  background: #1565c0;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.2);
+}
 
 /* #contact #registerForm {
   background: rgb(0, 98, 204) !important;
