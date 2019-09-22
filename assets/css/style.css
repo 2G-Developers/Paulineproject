@@ -781,8 +781,9 @@ section .section-title {
   color: white !important;
 } */
 
-body {
-  background: url("../img/bgImage.jpg") no-repeat center center fixed;
+main {
+  background: url("../img/bg1.jpg") no-repeat center center fixed;
+  background-position: 50% 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
