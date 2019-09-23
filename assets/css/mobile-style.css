@@ -4,17 +4,16 @@
   }
 
   .bd-example .carousel-item {
-    height: 100vh;
+    height: 50vh;
   }
 
   .bd-example .carousel-item img {
-    height: 80vh;
+    /* height: 80vh; */
+    height: 50vh;
   }
 
-  .section-1 .row .col-md-6 .panel {
-    position: initial;
-    width: initial;
-    height: initial;
+  .section-1 .row .col-md-6 .pray {
+    top: 260px;
   }
 
   .section-2 .cover {
@@ -127,6 +126,11 @@
 
   .section-5 h1 {
     font-size: 1.75rem;
+  }
+
+  .section-1 .row .col-md-6 .pray,
+  .section-1 .row .col-md-6 .pray img {
+    width: 100%;
   }
 
   .section-1 .title::before {
