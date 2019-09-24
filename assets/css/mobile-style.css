@@ -68,6 +68,13 @@
     background-size: contain;
     -o-background-size: contain;
   }
+
+  .section-1 .row .col-md-6 .pray,
+  .section-1 .row .col-md-6 .pray img {
+    position: initial;
+    width: 100%;
+  }
+
   .bd-example .carousel-item {
     height: 50vh;
   }
