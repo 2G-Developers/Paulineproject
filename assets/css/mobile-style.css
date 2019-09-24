@@ -60,7 +60,7 @@
     width: 24rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   main {
     background: url("../img/bg1.jpg") repeat 50% 0 fixed;
     -webkit-background-size: contain;
