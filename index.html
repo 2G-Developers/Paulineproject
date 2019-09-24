@@ -636,7 +636,7 @@
               <div class="card-body">
                 <div class="row p-0">
                   <div class="col-md-6">
-                    <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block"><i
+                    <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block" data-toggle="modal" data-target="#exampleModalCenter1"><i
                         class="fa fa-map-marker"></i></a>
                     <p>Ram Mansion, 3 C, III Floor, 37I/I-A, Pantheon Road, Egmore, Chennai - 600 008.</p>
 
@@ -651,12 +651,89 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button class="btn btn-success">Contact Us</button>
+                <button class="btn btn-success"  data-toggle="modal" data-target="#exampleModalCenter">Contact Us</button>
               </div>
             </div>
           </div>
     </section>
   </main>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+   <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control" id="Name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <!-- <label for="Email">Email</label> -->
+                      <input type="email" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <!-- <label for="Mobile">Mobile No</label> -->
+                      <input type="text" class="form-control" id="Mobile" placeholder="Mobile No">
+                    </div>
+                  </div>
+                  <!-- <div class="form-group">
+                               <label for="Parents">Name of Parents/Spouse/Gaurdian</label> 
+                              <input type="text" class="form-control" id="Parents" placeholder="Name of Parents">
+                            </div> -->
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <!-- <label for="date-picker">Date of Birth</label> -->
+                      <input type="text" class="form-control" id="date-picker" placeholder="Date of Birth">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <!-- <label for="Occupation">Occupation</label> -->
+                      <input type="email" class="form-control" id="Occupation" placeholder="Occupation">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <!-- <label for="Course">Course Duration</label> -->
+                      <input type="text" class="form-control" id="Course" placeholder="Course Duration">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="Address">Address</label> -->
+                    <input type="text" class="form-control" id="Address" placeholder="Address">
+                  </div>
+                  
+                </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="Modal-large-demo-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal-large-demo-label">Map</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31094.807776055215!2d80.22228625023665!3d13.045156419820593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526612c5cefea1%3A0xfc880a13c76a5359!2sRam%20Mansion!5e0!3m2!1sen!2sin!4v1569287220392!5m2!1sen!2sin"  width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="yes"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <footer class="bg-dark text-white">
     <div class="container-fluid p-0">
