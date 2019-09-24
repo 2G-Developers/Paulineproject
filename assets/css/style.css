@@ -603,6 +603,10 @@ footer .column i + i {
   line-height: 1.5;
 }
 
+.about-1 .col-md-6:first-child {
+  align-items: center;
+}
+
 .about-2 h4 {
   font-size: 1.8rem;
 }
@@ -647,10 +651,27 @@ footer .column i + i {
 #team .card {
   border: none;
   background: #fff;
+  min-height: 312px;
   /* width: 300px;
   height: 200px; */
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+#team .flip-card-front .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#team .flip-card-front .card-body .card-title,
+#team .flip-card-back .card-body .card-title {
+  color: #007b5e !important;
 }
 
 #team .flip-card-inner {

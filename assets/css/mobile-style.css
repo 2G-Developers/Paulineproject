@@ -124,12 +124,18 @@
     transform: translateY(49px);
   }
 
+  .section-5 .card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   .section-5 h1 {
     font-size: 1.75rem;
   }
 
   .section-1 .row .col-md-6 .pray,
   .section-1 .row .col-md-6 .pray img {
+    position: initial;
     width: 100%;
   }
 
