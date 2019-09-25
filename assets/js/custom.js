@@ -59,51 +59,23 @@ function rotateCard(btn) {
 //   }
 // });
 
-// Counter Animation
-
-let nCount = function(selector) {
-  $(selector).each(function() {
-    $(this).animate(
-      {
-        Counter: $(this).text()
-      },
-      {
-        duration: 4000,
-        easing: "swing",
-        step: function(value) {
-          $(this).text(Math.ceil(value));
-        }
-      }
-    );
-  });
-};
-
-let a = 0;
-$(window).scroll(function() {
-  let oTop = $(".numbers").offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() >= oTop) {
-    a++;
-    nCount(".rect > h1");
-  }
-});
-
 // owl carousel
 $(".owl-carousel").owlCarousel({
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
   lazyLoad: true,
   loop: true,
   dots: true,
-  nav: false,
+  // nav: false,
   margin: 5,
   responsiveClass: true,
   // stagePadding: 5,
   responsive: {
     0: {
       items: 1,
-      dots: true,
-      nav: false
+      dots: false,
+      nav: true
     },
     485: {
       items: 2,

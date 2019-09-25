@@ -575,7 +575,7 @@ footer .column i + i {
 } */
 
 .title {
-  background: #651fff;
+  background: rgb(25, 118, 210);
 }
 
 #about .about-title {
@@ -583,7 +583,7 @@ footer .column i + i {
 }
 
 #about .about-content {
-  font-size: 1.5em;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
@@ -725,23 +725,37 @@ footer .column i + i {
   transform: rotateY(180deg);
 }
 
-/* Contact */
+/* Register */
 
-/* #contact {
-  background: #1565c0;
+#register .container {
+  background: #000;
+  color: #fff;
 }
 
-#contact .card {
-  background: rgba(0, 0, 0, 0.2);
-} */
+#register .card {
+  background: #000;
+  color: #fff;
+}
 
 /* #contact #registerForm {
   background: rgb(0, 98, 204) !important;
 } */
 
-/* #contact input::placeholder {
-  color: white !important;
-} */
+#register input::placeholder {
+  color: #000 !important;
+}
+
+/* Contact */
+
+#contact .container {
+  background: #000;
+  color: #fff;
+}
+
+#contact .card {
+  background: #000;
+  color: #fff;
+}
 
 main {
   background: url("../img/bg1.jpg") no-repeat 50% 0 fixed;
