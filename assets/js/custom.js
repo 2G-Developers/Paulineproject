@@ -38,27 +38,6 @@ function rotateCard(btn) {
   }
 }
 
-// Data Picker Initialization
-// $(".datepicker").pickadate();
-
-// Sticky Navigation
-
-// let navbar = $(".navbar");
-
-// $(window).scroll(function() {
-//   // console.log(window.innerHeight);
-//   // console.log($(".section-0").offset().top);
-//   let windowTop = $(window).scrollTop();
-//   let oTop = $(".section-0").offset().top - window.innerHeight;
-//   console.log(windowTop);
-//   console.log(oTop);
-//   if (windowTop > oTop) {
-//     navbar.addClass("gc-light-blue");
-//   } else {
-//     navbar.removeClass("gc-light-blue");
-//   }
-// });
-
 // owl carousel
 $(".owl-carousel").owlCarousel({
   autoplay: true,
@@ -99,3 +78,31 @@ $(".owl-carousel").owlCarousel({
 // lightbox
 
 baguetteBox.run(".baguetteBoxTwo");
+
+// Scroll Spy
+
+$("body").scrollspy({ target: "#main-nav" });
+
+// Add smooth scrolling
+$("#main-nav a").on("click", function(e) {
+  // Check for a hash value
+  if (this.hash !== "") {
+    // Prevent default behavior
+    e.preventDefault();
+
+    // Store hash
+    const hash = this.hash;
+
+    // Animate smooth scroll
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      900,
+      function() {
+        // Add hash to URL after scroll
+        window.location.hash = hash;
+      }
+    );
+  }
+});
