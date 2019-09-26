@@ -1,5 +1,6 @@
 /* Google font */
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cookie|Courgette|Sacramento&display=swap");
 
 * {
   box-sizing: border-box;
@@ -71,6 +72,9 @@ section {
   --Rubik: "Rubik", cursive;
   --Patua: "Patua One", cursive;
   --Lobster: "Lobster", cursive;
+  --Cookie: "Cookie", cursive;
+  --Sacramento: "Sacramento", cursive;
+  --Courgette: "Courgette", cursive;
   --light-black: #2e2c2caf;
   --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
   --light-gray: rgba(255, 255, 255, 0.3);
@@ -220,43 +224,42 @@ header .nav-item {
   border-radius: 0.2em;
 }
 
-.section-1 .row .col-md-6:first-child {
-  position: relative;
+#about #handwriting {
+  font-family: var(--Sacramento);
+  font-size: 3em;
 }
+/* .section-1 .row .col-md-6:first-child {
+  position: relative;
+} */
 
-.section-1 .row .col-md-6 .pray {
+/* .section-1 .row .col-md-6 .pray {
   position: absolute;
   top: 80px;
   right: -12vmin;
   z-index: 1;
-}
+} */
 
-.section-1 .row .col-md-6 .panel {
-  /* position: absolute; */
-  /* top: 7vmin; */
-  /* left: -18vmin; */
-  background: white;
+/* .section-1 .row .col-md-6 .panel {
+  background: #000;
+  color: #fff;
   border-radius: 3px;
   text-align: left;
   padding: 5vmin 5vmin 5vmin 5vmin;
   font-family: var(--Rubik);
-}
+} */
 
-.section-1 .row .col-md-6 .panel h1 {
+/* .section-1 .row .col-md-6 .panel h1 {
   font-weight: bold;
   padding: 0.4em 0;
   font-size: 2em;
-}
+} */
 
-.section-1 .row .col-md-6 .panel p {
+/* .section-1 .row .col-md-6 .panel p {
   font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.5);
-}
+  color: #fff;
+} */
 
 /* section 2 */
-.section-2 {
-  /* background: #fff176; */
-}
 
 .cover {
   width: 100%;
@@ -639,6 +642,7 @@ footer .column i + i {
 }
 
 #about .about-content {
+  font-family: var(--Snigle-font);
   font-size: 1.3rem;
   line-height: 1.6;
 }
@@ -655,6 +659,7 @@ footer .column i + i {
 }
 
 .about-1 li {
+  font-family: var(--Snigle-font);
   font-size: 1.3em;
   line-height: 1.5;
 }

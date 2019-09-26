@@ -12,9 +12,9 @@
     height: 50vh;
   }
 
-  .section-1 .row .col-md-6 .pray {
+  /* .section-1 .row .col-md-6 .pray {
     top: 260px;
-  }
+  } */
 
   .section-2 .cover {
     background-position: -25vmin -10vmin;
@@ -69,11 +69,11 @@
     -o-background-size: contain;
   }
 
-  .section-1 .row .col-md-6 .pray,
+  /* .section-1 .row .col-md-6 .pray,
   .section-1 .row .col-md-6 .pray img {
     position: initial;
     width: 100%;
-  }
+  } */
 
   .bd-example .carousel-item {
     height: 50vh;
@@ -140,15 +140,15 @@
     font-size: 1.75rem;
   }
 
-  .section-1 .row .col-md-6 .pray,
+  /* .section-1 .row .col-md-6 .pray,
   .section-1 .row .col-md-6 .pray img {
     position: initial;
     width: 100%;
-  }
+  } */
 
-  .section-1 .title::before {
+  /* .section-1 .title::before {
     transform: translateY(49px);
-  }
+  } */
 
   .section-1 h1 {
     font-size: 1.75rem;
