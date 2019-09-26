@@ -96,7 +96,7 @@
     <!-- About-us -->
     <section id="about" class="section-0 py-5" style="position: relative;">
       <div class="container">
-        
+
         <div class="row pb-4">
           <div class="col-md-12 text-center">
               <h2 class="title text-center my-5">About Us</h2>
@@ -127,12 +127,12 @@
 
     <section id="whyidi" class="about-1 py-5">
       <div class="container">
-          
+
         <div class="row pb-4">
           <div class="col-md-12">
               <h2 class="title text-center mt-5">Why IDI?</h2>
           </div>
-           
+
           <div class="col-md-6 text-left">
             <ul class="list-group list-group-flush pt-5 pb-3">
               <ul class="list-group">
@@ -303,7 +303,7 @@
                       src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                       alt="Card image cap" />
                   </div>
-    
+
                   <div class="card-body text-center">
                     <h5 class="card-title">
                       Short Term Certificate in Interior Design
@@ -339,7 +339,7 @@
                         <p class="card-text" style="color: #2196f3;">Course Duration: 6 months/ 1 year</p>
                         <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                   </div>
-                  
+
                 </div>
 
                 <div class="flip-card-back">
@@ -355,7 +355,7 @@
                     </p>
                     <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -379,11 +379,11 @@
                         </p>
                         <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                       </div>
-                      
+
                     </div>
-    
+
                     <div class="flip-card-back">
-                        
+
                       <div class="card-body">
                           <h4 class="card-title">
                               NID
@@ -395,7 +395,7 @@
                         </p>
                         <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -420,9 +420,9 @@
                         </p>
                         <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                       </div>
-                     
+
                     </div>
-    
+
                     <div class="flip-card-back">
                       <div class="card-body">
                           <h4 class="card-title">NIFT</h4>
@@ -433,7 +433,7 @@
                         </p>
                         <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -458,9 +458,9 @@
                       </p>
                       <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                     </div>
-                    
+
                   </div>
-  
+
                   <div class="flip-card-back">
                     <div class="card-body">
                         <h4 class="card-title">VISCOMM</h4>
@@ -471,12 +471,12 @@
                       </p>
                       <a class="btn btn-success btn-sm" onclick="rotateCard(this);"><i class="fa fa-plus"></i></a>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
         </div>
-        
+
       </div>
         </div>
       </div>
@@ -637,73 +637,73 @@
               <h2 class="title text-center text-white my-5">Register</h2>
             <div class="card text-center">
               <div class="card-body text-center">
-                <form>
+                <form id="needs-validation">
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <input type="text" class="form-control" id="Name" placeholder="Name">
+                      <input type="text" id="validationCustom01" class="form-control"  placeholder="Name*" pattern="^.+$" required>
                     </div>
-                  </div>
-                  
-                  <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="Address" placeholder="Address"></div>
                   </div>
 
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="Landmark" placeholder="Address"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control"id="validationCustom02" pattern="^.{10,}$" placeholder="Address*(10 char min)" required></div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="Landmark" placeholder="Address*(10 char min)" pattern="^.{10,}$" required></div>
                   </div>
 
                   <div class="form-row">
                     <div class="form-group col-md-4">
                       <!-- <label for="date-picker">Date of Birth</label> -->
-                      <input type="text" class="form-control" id="date-picker" placeholder="Date of Birth">
+                      <input type="text" class="form-control" id="date-picker" placeholder="Date of Birth*" required>
                     </div>
                     <div class="form-group col-md-4">
                       <!-- <label for="Occupation">Occupation</label> -->
-                      <input type="text" class="form-control" id="Age" placeholder="Age">
+                      <input type="text" class="form-control" id="Age" placeholder="Age*" pattern="^\d{2}$" required>
                     </div>
                     <div class="form-group col-md-4">
                       <!-- <label for="Course">Course Duration</label> -->
-                      <input type="text" class="form-control" id="Gender" placeholder="Gender">
+                      <input type="text" class="form-control" id="Gender" placeholder="Gender(M/F)" pattern="^(M|F)$" required>
                     </div>
                   </div>
 
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="qualification" placeholder="Educational qualifications">
+                      <input type="text" class="form-control" id="qualification" placeholder="Educational qualifications*" required>
                     </div>
                     <div class="form-group col-md-6">
                       <!-- <label for="Course">Course Duration</label> -->
-                      <input type="text" class="form-control" id="yos" placeholder="Year of study / Completion">
+                      <input type="text" class="form-control" id="yos" placeholder="Year of study / Completion*"  pattern="^\d{4}$" required>
                     </div>
                   </div>
 
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="mobile" placeholder="Mobile No">
+                      <input type="text" class="form-control" id="mobile" placeholder="Mobile No(1234567890)*" pattern="^\d{10}$" required>
                     </div>
                     <div class="form-group col-md-6">
                       <!-- <label for="Course">Course Duration</label> -->
-                      <input type="text" class="form-control" id="landline" placeholder="Landline">
+                      <input type="text" class="form-control" id="landline" placeholder="Landline" >
                     </div>
                   </div>
 
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="email" class="form-control" id="email" placeholder="Email Id"></div>
+                    <div class="form-group col-md-12"><input type="email" class="form-control" id="email" placeholder="Email Id*" pattern="^.*@.*\..*$" required></div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="nop" placeholder="Name of parent/spouse/guardian"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="nop" placeholder="Name of parent/spouse/guardian*" required></div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="occupation" placeholder="Occupation"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="occupation" placeholder="Occupation*" required></div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="parentAddress" placeholder="Address"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="parentAddress" placeholder="Address*" required></div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="parentContact" placeholder="Contact"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="parentContact" placeholder="Contact*" pattern="^\d{10}$" required></div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12"><input type="text" class="form-control" id="courses" placeholder="Course applied for"></div>
+                    <div class="form-group col-md-12"><input type="text" class="form-control" id="courses" placeholder="Course applied for" ></div>
                   </div>
 
                   <div class="form-row">
@@ -736,15 +736,15 @@
                         <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block" data-toggle="modal" data-target="#exampleModalCenter1"><i
                             class="fa fa-map-marker"></i></a>
                         <p>Ram Mansion, 3 C, III Floor, 37I/I-A, Pantheon Road, Egmore, Chennai - 600 008.</p>
-    
+
                       </div>
-    
+
                       <div class="col-md-6">
                         <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block"><i
                             class="fa fa-phone"></i></a>
                         <p>+91-9361324488, &nbsp;<br>+91-7299886107</p>
                       </div>
-    
+
                     </div>
                   </div>
                   <div class="card-footer">
@@ -763,28 +763,28 @@
         </button>
       </div>
       <div class="modal-body">
-   <form>
+   <form id="needs-validation">
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <input type="text" class="form-control" id="Name" placeholder="Name">
+                      <input type="text" class="form-control" id="Name" placeholder="Name" pattern="^.{1,}$" required>
                     </div>
                   </div>
 
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <input type="text" class="form-control" id="email" placeholder="Email Id">
+                      <input type="text" class="form-control" id="email" placeholder="Email Id*" pattern="^.*@.*\..*$" required>
                     </div>
                   </div>
 
                   <div class="form-row">
                       <div class="form-group col-md-12">
-                        <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+                        <input type="text" class="form-control" id="mobile" placeholder="Mobile*" pattern="^\d{10}$" required>
                       </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                          <input type="text" class="form-control" id="message" placeholder="message">
+                          <input type="text" class="form-control" id="message" placeholder="message" >
                         </div>
                       </div>
                 </form>
@@ -852,6 +852,21 @@
     integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <!-- <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
   <script src="./assets/js/custom.js"></script>
+  <script>
+  (function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+  </script>
 </body>
 
 </html>
