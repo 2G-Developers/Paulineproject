@@ -388,7 +388,12 @@ header .nav-item {
   transform: translateY(8px);
 } */
 
-.section-5 .card {
+.section-5 #course-detail .card {
+  border-bottom-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+}
+
+.section-5 .row:last-child .card {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   width: 18rem;
