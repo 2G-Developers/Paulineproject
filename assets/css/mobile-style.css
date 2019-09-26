@@ -1,66 +1,30 @@
 @media only screen and (max-width: 768px) {
+  /* navbar */
+
   header .navbar-brand {
     padding-left: 1rem;
   }
+
+  /* carousel */
 
   .bd-example .carousel-item {
     height: 50vh;
   }
 
   .bd-example .carousel-item img {
-    /* height: 80vh; */
     height: 50vh;
   }
 
-  /* .section-1 .row .col-md-6 .pray {
-    top: 260px;
-  } */
+  /* testimonials */
 
-  .section-2 .cover {
-    background-position: -25vmin -10vmin;
-  }
-
-  .numbers .rect {
-    width: 10rem;
-    height: 8rem;
-  }
-
-  .numbers .rect h1 {
-    font-size: 2rem;
-  }
-
-  .section-3 {
-    height: inherit;
-    padding: 10vmin !important;
-  }
-
-  .section-3 .row h1 {
-    padding: 6vmin 4vmin;
-  }
-
-  .section-3 .row .col-md-6 {
-    text-align: center !important;
-  }
-
-  .section-3 .desktop i {
-    font-size: 8vmin;
-  }
-
-  .section-4 .carousel-item {
-    padding-left: 0.6rem;
-  }
-
-  .section-4 .team {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .section-4 .carousel-inner {
-    width: 24rem;
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 435px) {
+  /* main */
   main {
     background: url("../img/bg1.jpg") repeat 50% 0 fixed;
     -webkit-background-size: contain;
@@ -69,11 +33,7 @@
     -o-background-size: contain;
   }
 
-  /* .section-1 .row .col-md-6 .pray,
-  .section-1 .row .col-md-6 .pray img {
-    position: initial;
-    width: 100%;
-  } */
+  /* carousel */
 
   .bd-example .carousel-item {
     height: 50vh;
@@ -82,12 +42,17 @@
   .bd-example .carousel-item img {
     height: 50vh;
   }
+
+  /* footer */
+
   footer .row .col-md-2 {
     margin-top: 8vmin;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  /* main */
+
   main {
     background: url("../img/bg1.jpg") repeat 50% 0 fixed;
     -webkit-background-size: contain;
@@ -96,9 +61,7 @@
     -o-background-size: contain;
   }
 
-  .section-6 .title::before {
-    transform: translateY(49px);
-  }
+  /* carousel */
 
   .bd-example .carousel-item {
     height: 50vh;
@@ -107,50 +70,33 @@
   .bd-example .carousel-item img {
     height: 50vh;
   }
-  .section-4 .card {
-    width: 18rem;
-  }
 
-  .section-4 .carousel-inner {
-    margin-left: -14vmin;
-  }
+  /* portfolio */
 
-  .section-6 h1 {
+  #portfolio h1 {
     font-size: 1.75rem;
   }
 
-  #team .title::before {
-    transform: translateY(49px);
-  }
+  /* coaching */
 
-  #team h1 {
+  #coaching h1 {
     font-size: 1.75rem;
   }
 
-  .section-5 .title::before {
-    transform: translateY(49px);
-  }
+  /* courses */
 
-  .section-5 .card {
+  #courses .card {
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  .section-5 h1 {
+  #courses h1 {
     font-size: 1.75rem;
   }
 
-  /* .section-1 .row .col-md-6 .pray,
-  .section-1 .row .col-md-6 .pray img {
-    position: initial;
-    width: 100%;
-  } */
+  /* experts */
 
-  /* .section-1 .title::before {
-    transform: translateY(49px);
-  } */
-
-  .section-1 h1 {
+  #experts h1 {
     font-size: 1.75rem;
   }
 }

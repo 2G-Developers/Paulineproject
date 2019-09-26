@@ -1,31 +1,20 @@
-// $(document).ready(function() {
-//   $(".card-animate").hover(
-//     // trigger when on hover
-//     function() {
-//       $(this).animate(
-//         {
-//           marginTop: "-=1%"
-//         },
-//         200
-//       );
-//     },
-
-//     // trigger when hover out
-//     function() {
-//       $(this).animate(
-//         {
-//           marginTop: "0%"
-//         },
-//         200
-//       );
-//     }
-//   );
-// });
-
 $(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+    preloaderFadeOutTime = 800;
+    function hidePreloader() {
+      var preloader = $(".spinner-wrapper");
+      preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+  });
+
+  // Hammer Icon
   $(".first-button").on("click", function() {
     $(".animated-icon1").toggleClass("open");
   });
+
+  // form datepicker
   $("#date-picker").datepicker();
 });
 
@@ -106,3 +95,26 @@ $("#main-nav a").on("click", function(e) {
     );
   }
 });
+
+// form validation
+(function() {
+  "use strict";
+  window.addEventListener(
+    "load",
+    function() {
+      var form = document.getElementById("needs-validation");
+      form.addEventListener(
+        "submit",
+        function(event) {
+          if (form.checkValidity() == false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    },
+    false
+  );
+})();

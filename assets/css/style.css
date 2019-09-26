@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   position: relative;
 }
+
+/* Preloader */
+
 .spinner-wrapper {
   position: fixed;
   top: 0;
@@ -70,10 +74,27 @@ body {
   }
 }
 
+/* header */
+
 header,
 section {
   overflow-x: hidden;
 }
+
+/* main */
+main {
+  background: url("../img/bg1.jpg") no-repeat 50% 0 fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.container {
+  background: #fff;
+}
+
+/* Initialize Variable */
 
 :root {
   --Snigle-font: "Sniglet", cursive;
@@ -224,19 +245,62 @@ header .nav-item {
   height: 100vh;
 }
 
-/* Section 1 */
+/* About */
 
-.section-1 .container {
+#about .container {
   background: #000;
   color: #fff;
 }
 
-.section-1 .panel p {
+.title {
+  background: rgb(25, 118, 210);
+  font-family: var(--Alegreya);
+  text-transform: uppercase;
+}
+
+#about .about-title {
+  font-size: 1.8em;
+}
+
+#about .about-content {
+  font-family: var(--Merriweather);
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* whyidi */
+
+#whyidi .container {
+  background: #000;
+  color: #fff;
+}
+
+#whyidi li {
+  background: #000;
+}
+
+#whyidi li {
+  font-family: var(--Merriweather);
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+#whyidi .col-md-6:last-child {
+  align-items: center;
+}
+
+/* Expert */
+
+#experts .container {
+  background: #000;
+  color: #fff;
+}
+
+#experts .panel p {
   font-family: var(--Merriweather);
 }
 
-.section-1 .row .col-md-6 .pray img {
-  /* opacity: 0.8; */
+#experts .row .col-md-6 .pray img {
   width: 80%;
   border-radius: 0.2em;
 }
@@ -246,330 +310,223 @@ header .nav-item {
   font-size: 3em;
 }
 
-/* .section-1 .row .col-md-6:first-child {
-  position: relative;
-} */
+/* Courses */
 
-/* .section-1 .row .col-md-6 .pray {
-  position: absolute;
-  top: 80px;
-  right: -12vmin;
-  z-index: 1;
-} */
-
-/* .section-1 .row .col-md-6 .panel {
-  background: #000;
-  color: #fff;
-  border-radius: 3px;
-  text-align: left;
-  padding: 5vmin 5vmin 5vmin 5vmin;
-  font-family: var(--Rubik);
-} */
-
-/* .section-1 .row .col-md-6 .panel h1 {
-  font-weight: bold;
-  padding: 0.4em 0;
-  font-size: 2em;
-} */
-
-/* .section-1 .row .col-md-6 .panel p {
-  font-size: 0.9em;
-  color: #fff;
-} */
-
-/* section 2 */
-
-.cover {
-  width: 100%;
-  height: 55vmin;
-  background: url("../img/pexels-photo-452738.jpeg");
-  background-position: -24rem -19rem;
-  background-size: 150%;
-  position: relative;
-}
-
-.cover .content {
-  background: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-  padding-top: 19vmin;
-}
-
-.cover .content > h1 {
-  font-family: var(--Patua);
-  font-size: 6vmin;
-  color: whitesmoke;
-}
-
-.cover .content > p {
-  font-family: var(--Rubik);
-  font-size: 2vmin;
-  color: #e5e5e5;
-}
-
-.numbers .rect {
-  /* position: relative; */
-  z-index: 1;
-  background: white;
-  width: 17rem;
-  height: 12rem;
-  padding-top: 3.5vmin;
-  margin: 1rem;
-  border-radius: 0.5em;
-  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
-}
-
-/* .numbers {
-  margin-top: -15vmin;
-} */
-
-.numbers .rect h1 {
-  font-size: 5rem;
-  color: tomato;
-}
-
-.numbers .rect p {
-  font-family: var(--Patua);
-}
-
-.cards div {
-  padding: 0;
-  margin: 0;
-}
-
-.section-2 .cards .title {
-  background: rgba(208, 241, 241, 0.149);
-  padding: 1.4rem 2.5rem;
-  font-size: 2vmin;
-}
-
-.section-2 .card .card-text {
-  padding: 2.5rem 3rem;
-  color: var(--light-black);
-}
-
-.section-2 .card-body .pricing {
-  background: rgba(208, 241, 241, 0.149);
-  border-top-right-radius: 170px;
-  border-top-left-radius: 170px;
-}
-
-.section-2 .card-body .pricing > h1 {
-  font-size: 10vmin;
-  padding: 1em 0.5em;
-}
-
-/* Section 3 */
-
-.section-3 {
-  height: 70vmin;
-  margin-top: 15vmin;
-  background: var(--bggradient);
-}
-
-.section-3 .col-md-12 > h1 {
-  padding: 2em 0 0.5em 0;
-  color: whitesmoke;
-  font-size: 6vmin;
-}
-
-.section-3 .col-md-12 > p {
-  padding: 0.4em;
-  padding-bottom: 2em;
-  color: var(--light-gray);
-  font-size: 3vmin;
-}
-
-.section-3 .desktop {
-  background: white;
-  display: inline-block;
-  border-radius: 3em;
-  padding: 2vmin 4.5vmin;
-  margin: 1em;
-}
-
-.section-3 .desktop h3 {
-  font-size: 4vmin;
-}
-
-.section-3 .desktop p {
-  font-size: 2vmin;
-}
-
-/* Section 4 */
-
-.section-4 .container h1 {
-  font-size: 6vmin;
-  padding-top: 14vmin;
-}
-
-.section-4 .team {
-  padding: 10vmin 4vmin;
-}
-
-.section-4 .card {
-  width: 22rem;
-  margin-top: 10vmin;
-}
-
-.section-4 .card .card-text {
-  padding: 0.5em;
-}
-
-.section-4 .card .card-body > a {
-  font-size: 1.5em;
-}
-
-.section-4 .carousel-item {
-  padding-left: 3rem;
-}
-
-.border-radius {
-  border-radius: 340px;
-  width: 60%;
-}
-
-/* Section-5 */
-
-.section-5 .container {
+#courses .container {
   background: #000;
 }
 
-.section-5 #course-detail .card {
+#courses #course-detail .card {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   font-family: var(--Merriweather);
   font-weight: 500;
 }
 
-.section-5 .row:last-child .card {
+#courses .row:last-child .card {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   width: 18rem;
 }
 
-.section-5 .row:last-child .card-title {
+#courses .row:last-child .card-title {
   font-family: var(--AlegreyaSC);
 }
 
-.section-5 .card .card-img-top {
+#courses .card .card-img-top {
   border-top-left-radius: 3rem;
-  /* height: 200px; */
 }
 
-.section-5 .card-zoom .inner {
+#courses .card-zoom .inner {
   overflow: hidden;
 }
 
-.section-5 .card-zoom .inner img {
+#courses .card-zoom .inner img {
   transition: all 1.5s ease;
 }
 
-.section-5 .card-zoom .inner:hover img {
+#courses .card-zoom .inner:hover img {
   transform: scale(1.5);
 }
 
-.section-5 .card:hover {
+#courses .card:hover {
   -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
-/* Section-6 */
+/* coaching */
 
-.section-6 .container {
+#coaching .container {
   background: #000;
 }
 
-/* .section-6 .title::before {
-  content: "";
-  background: #651fff;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
+#coaching h4 {
+  font-family: var(--AlegreyaSC);
 }
 
-.section-6 .title::after {
-  content: "";
-  background: #651fff;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
-} */
+#coaching .card {
+  border: none;
+  background: #fff;
+  min-height: 312px;
+  perspective: 1000px;
+}
 
-.section-6 img.d-block.img-fluid {
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+#coaching .flip-card-front .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#coaching .flip-card-front .card-body .card-title,
+#coaching .flip-card-back .card-body .card-title {
+  color: #000 !important;
+}
+
+#coaching .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+#coaching .card-body,
+#coaching .card-footer {
+  background: #fff;
+}
+
+#coaching .card-footer a {
+  cursor: pointer;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#coaching .hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+/* portfolio */
+
+#portfolio .container {
+  background: #000;
+}
+
+#baguetteBox-overlay .full-image figcaption {
+  font-size: 1.7rem;
+}
+
+#portfolio img.d-block.img-fluid {
   height: 200px;
 }
 
-/* Section-7 */
+/* Testimonials */
 
-/* .section-7 { */
-/* background: linear-gradient(to bottom, #a8ff78, #78ffd6); */
-/* } */
-
-/* .section-7 .title::before {
-  content: "";
-  background: #651fff;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
+#testimonials .container {
+  background: #000;
+  color: #fff;
 }
 
-.section-7 .title::after {
-  content: "";
-  background: #651fff;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.photo-gallery {
+  color: #313437;
+  background-color: #fff;
+}
+
+.photo-gallery p {
+  color: #7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
   margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
-} */
-
-.section-7 .card {
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 3rem;
-  width: 18rem;
+  padding-top: 40px;
+  color: inherit;
 }
 
-.section-7 .card .card-img-top {
-  border-top-left-radius: 3rem;
-  /* height: 200px; */
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
 }
 
-.section-7 .card-zoom .inner {
-  overflow: hidden;
+.photo-gallery .intro p {
+  margin-bottom: 0;
 }
 
-.section-7 .card-zoom .inner img {
-  transition: all 1.5s ease;
+.photo-gallery .photos {
+  padding-bottom: 20px;
 }
 
-.section-7 .card-zoom .inner:hover img {
-  transform: scale(1.5);
+.photo-gallery .item {
+  padding-bottom: 30px;
 }
 
-.section-7 .card:hover {
-  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+/* Register */
+
+#register .container {
+  background: #000;
+  color: #fff;
+}
+
+#register .card {
+  background: #000;
+  color: #fff;
+}
+
+#register input::placeholder {
+  color: #000 !important;
+}
+
+/* Contact */
+
+#contact .container {
+  background: #000;
+  color: #fff;
+}
+
+#contact .card {
+  background: #000;
+  color: #fff;
+}
+
+#contact .card p {
+  font-family: var(--Merriweather);
 }
 
 /* Footer */
 
 footer {
-  /* background: #a8ff78; */
   overflow-x: hidden;
   padding: 14vmin 18vmin;
 }
@@ -597,251 +554,4 @@ footer .column .i {
 
 footer .column i + i {
   padding: 0 0.5em;
-}
-
-/* Sticky Class */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.815);
-  z-index: 9999;
-  transition: all 1.5s ease;
-}
-
-/* About */
-
-#about .container {
-  background: #000;
-  color: #fff;
-}
-
-/* #about .title::before {
-  content: "";
-  background: #651fff;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
-}
-
-#about .title::after {
-  content: "";
-  background: #651fff;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
-} */
-
-.title {
-  background: rgb(25, 118, 210);
-  font-family: var(--Alegreya);
-  text-transform: uppercase;
-}
-
-#about .about-title {
-  font-size: 1.8em;
-}
-
-#about .about-content {
-  font-family: var(--Merriweather);
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-/* about-1 */
-
-.about-1 .container {
-  background: #000;
-  color: #fff;
-}
-
-.about-1 li {
-  background: #000;
-}
-
-.about-1 li {
-  font-family: var(--Merriweather);
-  font-size: 1.3em;
-  line-height: 1.5;
-}
-
-.about-1 .col-md-6:last-child {
-  align-items: center;
-}
-
-.about-2 h4 {
-  font-size: 1.8rem;
-}
-
-/* Team Card */
-
-#team .container {
-  background: #000;
-}
-
-#team h4 {
-  font-family: var(--AlegreyaSC);
-}
-
-/* #team .title::before {
-  content: "";
-  background: #651fff;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
-}
-
-#team .title::after {
-  content: "";
-  background: #651fff;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
-} */
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #108d6f;
-  border-color: #108d6f;
-  box-shadow: none;
-  outline: none;
-}
-
-#team .card {
-  border: none;
-  background: #fff;
-  min-height: 312px;
-  /* width: 300px;
-  height: 200px; */
-  /* border: 1px solid #f1f1f1; */
-  perspective: 1000px;
-}
-
-.owl-carousel .owl-stage {
-  display: flex;
-  align-items: center;
-}
-
-#team .flip-card-front .card-body img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
-#team .flip-card-front .card-body .card-title,
-#team .flip-card-back .card-body .card-title {
-  color: #000 !important;
-}
-
-#team .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1.2s;
-  transform-style: preserve-3d;
-}
-
-#team .card-body,
-#team .card-footer {
-  background: #fff;
-}
-
-#team .card-footer a {
-  cursor: pointer;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-#team .hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front {
-  /* position: absolute; */
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #fff;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  /* background-color: dodgerblue; */
-  color: #000;
-  transform: rotateY(180deg);
-}
-
-/* Register */
-
-#register .container {
-  background: #000;
-  color: #fff;
-}
-
-#register .card {
-  background: #000;
-  color: #fff;
-}
-
-/* #contact #registerForm {
-  background: rgb(0, 98, 204) !important;
-} */
-
-#register input::placeholder {
-  color: #000 !important;
-}
-
-/* Contact */
-
-#contact .container {
-  background: #000;
-  color: #fff;
-}
-
-#contact .card {
-  background: #000;
-  color: #fff;
-}
-
-#contact .card p {
-  font-family: var(--Merriweather);
-}
-
-main {
-  background: url("../img/bg1.jpg") no-repeat 50% 0 fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.container {
-  background: #fff;
 }
