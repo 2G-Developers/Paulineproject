@@ -1,6 +1,7 @@
 /* Google font */
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cookie|Courgette|Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC|Merriweather&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,24 +11,25 @@ body {
   position: relative;
 }
 .spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ff6347;
-z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6347;
+  z-index: 999999;
 }
 
 .spinner {
   width: 40px;
   height: 40px;
   position: absolute;
-top: 48%;
-left: 48%;
+  top: 48%;
+  left: 48%;
 }
 
-.double-bounce1, .double-bounce2 {
+.double-bounce1,
+.double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -37,30 +39,36 @@ left: 48%;
   top: 0;
   left: 0;
 
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 @-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes sk-bounce {
-  0%, 100% {
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% {
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
   }
 }
 
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
 
 header,
 section {
@@ -75,6 +83,9 @@ section {
   --Cookie: "Cookie", cursive;
   --Sacramento: "Sacramento", cursive;
   --Courgette: "Courgette", cursive;
+  --Alegreya: "Alegreya", serif;
+  --AlegreyaSC: "Alegreya SC", serif;
+  --Merriweather: "Merriweather", serif;
   --light-black: #2e2c2caf;
   --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
   --light-gray: rgba(255, 255, 255, 0.3);
@@ -185,11 +196,13 @@ section {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #fff;
+  font-family: var(--AlegreyaSC);
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   font-weight: 600;
+  font-family: var(--AlegreyaSC);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -218,6 +231,10 @@ header .nav-item {
   color: #fff;
 }
 
+.section-1 .panel p {
+  font-family: var(--Merriweather);
+}
+
 .section-1 .row .col-md-6 .pray img {
   /* opacity: 0.8; */
   width: 80%;
@@ -228,6 +245,7 @@ header .nav-item {
   font-family: var(--Sacramento);
   font-size: 3em;
 }
+
 /* .section-1 .row .col-md-6:first-child {
   position: relative;
 } */
@@ -417,38 +435,21 @@ header .nav-item {
   background: #000;
 }
 
-/* .section-5 .title::before {
-  content: "";
-  background: #651fff;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
-}
-
-.section-5 .title::after {
-  content: "";
-  background: #651fff;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
-} */
-
 .section-5 #course-detail .card {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
+  font-family: var(--Merriweather);
+  font-weight: 500;
 }
 
 .section-5 .row:last-child .card {
   border-bottom-right-radius: 3rem;
   border-top-left-radius: 3rem;
   width: 18rem;
+}
+
+.section-5 .row:last-child .card-title {
+  font-family: var(--AlegreyaSC);
 }
 
 .section-5 .card .card-img-top {
@@ -640,6 +641,8 @@ footer .column i + i {
 
 .title {
   background: rgb(25, 118, 210);
+  font-family: var(--Alegreya);
+  text-transform: uppercase;
 }
 
 #about .about-title {
@@ -647,7 +650,7 @@ footer .column i + i {
 }
 
 #about .about-content {
-  font-family: var(--Snigle-font);
+  font-family: var(--Merriweather);
   font-size: 1.3rem;
   line-height: 1.6;
 }
@@ -664,7 +667,7 @@ footer .column i + i {
 }
 
 .about-1 li {
-  font-family: var(--Snigle-font);
+  font-family: var(--Merriweather);
   font-size: 1.3em;
   line-height: 1.5;
 }
@@ -681,6 +684,10 @@ footer .column i + i {
 
 #team .container {
   background: #000;
+}
+
+#team h4 {
+  font-family: var(--AlegreyaSC);
 }
 
 /* #team .title::before {
@@ -737,7 +744,7 @@ footer .column i + i {
 
 #team .flip-card-front .card-body .card-title,
 #team .flip-card-back .card-body .card-title {
-  color: #007b5e !important;
+  color: #000 !important;
 }
 
 #team .flip-card-inner {
@@ -821,6 +828,10 @@ footer .column i + i {
 #contact .card {
   background: #000;
   color: #fff;
+}
+
+#contact .card p {
+  font-family: var(--Merriweather);
 }
 
 main {
