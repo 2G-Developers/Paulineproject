@@ -9,11 +9,6 @@ $(document).ready(function() {
     hidePreloader();
   });
 
-  // Hammer Icon
-  $(".first-button").on("click", function() {
-    $(".animated-icon1").toggleClass("open");
-  });
-
   // form datepicker
   $("#date-picker").datepicker();
 });
@@ -118,3 +113,8 @@ $("#main-nav a").on("click", function(e) {
     false
   );
 })();
+
+// Auto close navbar when click
+$(".navbar-collapse a").click(function() {
+  $(".navbar-collapse").collapse("hide");
+});

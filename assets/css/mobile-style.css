@@ -1,6 +1,11 @@
 @media only screen and (max-width: 768px) {
   /* navbar */
 
+  /* navbar */
+  nav ul {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
   header .navbar-brand {
     padding-left: 1rem;
   }
@@ -33,6 +38,11 @@
     -o-background-size: contain;
   }
 
+  /* navbar */
+  nav ul {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
   /* carousel */
 
   .bd-example .carousel-item {
@@ -59,6 +69,11 @@
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;
+  }
+
+  /* navbar */
+  nav ul {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   /* carousel */
