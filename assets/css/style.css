@@ -83,11 +83,15 @@ section {
 
 /* main */
 main {
-  background: url("../img/bg1.jpg") no-repeat 50% 0 fixed;
+  overflow-x: hidden;
+  background: url("../img/bg1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 15%;
+  background-attachment: fixed;
 }
 
 .container {
@@ -195,6 +199,14 @@ main {
 }
 
 /* Header */
+nav {
+  height: 170px;
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; /* Determine what direction the image will repeat */
+  background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
+  background-attachment: fixed; /* use with "fixed" to make it scroll with page */
+}
 .bd-example {
   position: relative;
 }
@@ -216,14 +228,14 @@ main {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #fff;
-  font-family: var(--AlegreyaSC);
+  color: #000;
+  font-family: sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #000;
   font-weight: 600;
-  font-family: var(--AlegreyaSC);
+  font-family: sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -254,7 +266,7 @@ header .nav-item {
 
 .title {
   background: rgb(25, 118, 210);
-  font-family: var(--Alegreya);
+  font-family: sans-serif;
   text-transform: uppercase;
 }
 
@@ -263,8 +275,8 @@ header .nav-item {
 }
 
 #about .about-content {
-  font-family: var(--Merriweather);
-  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -280,8 +292,8 @@ header .nav-item {
 }
 
 #whyidi li {
-  font-family: var(--Merriweather);
-  font-size: 1.3em;
+  font-family: sans-serif;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -297,17 +309,17 @@ header .nav-item {
 }
 
 #experts .panel p {
-  font-family: var(--Merriweather);
+  font-family: sans-serif;
 }
 
-#experts .row .col-md-6 .pray img {
-  width: 80%;
+#experts .row .col-md-12 .pray img {
+  width: 60%;
   border-radius: 0.2em;
 }
 
 #about #handwriting {
-  font-family: var(--Sacramento);
-  font-size: 3em;
+  font-family: sans-serif;
+  font-size: 1.3em;
 }
 
 /* Courses */
@@ -317,24 +329,24 @@ header .nav-item {
 }
 
 #courses #course-detail .card {
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 3rem;
-  font-family: var(--Merriweather);
+  /* border-bottom-right-radius: 3rem; */
+  /* border-top-left-radius: 3rem; */
+  font-family: sans-serif;
   font-weight: 500;
 }
 
 #courses .row:last-child .card {
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 3rem;
+  /* border-bottom-right-radius: 3rem; */
+  /* border-top-left-radius: 3rem; */
   width: 18rem;
 }
 
 #courses .row:last-child .card-title {
-  font-family: var(--AlegreyaSC);
+  font-family: sans-serif;
 }
 
 #courses .card .card-img-top {
-  border-top-left-radius: 3rem;
+  /* border-top-left-radius: 3rem; */
 }
 
 #courses .card-zoom .inner {
@@ -362,7 +374,7 @@ header .nav-item {
 }
 
 #coaching h4 {
-  font-family: var(--AlegreyaSC);
+  font-family: sans-serif;
 }
 
 #coaching .card {
@@ -521,7 +533,7 @@ header .nav-item {
 }
 
 #contact .card p {
-  font-family: var(--Merriweather);
+  font-family: sans-serif;
 }
 
 /* Footer */
