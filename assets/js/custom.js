@@ -118,3 +118,6 @@ $("#main-nav a").on("click", function(e) {
 $(".navbar-collapse a").click(function() {
   $(".navbar-collapse").collapse("hide");
 });
+
+// copyright year
+$("#year").text(new Date().getFullYear());

@@ -135,6 +135,7 @@ nav {
 }
 .bd-example {
   position: relative;
+  margin-top: 150px;
 }
 
 .bd-example #overlay {
