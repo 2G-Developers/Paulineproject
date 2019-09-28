@@ -53,6 +53,11 @@
     height: 50vh;
   }
 
+  /* whyidi */
+  #whyidi img {
+    width: 100%;
+  }
+
   /* footer */
 
   footer .row .col-md-2 {
