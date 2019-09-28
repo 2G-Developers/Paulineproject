@@ -86,6 +86,12 @@
     height: 50vh;
   }
 
+  /* whyidi */
+
+  #whyidi img {
+    width: 100%;
+  }
+
   /* portfolio */
 
   #portfolio h1 {
