@@ -831,100 +831,98 @@
           <div  class="py-4">
 
           </div>
-
-
           <div class="row pb-4 py-3">
             <div class="col-md-12 p-0">
                 <h2 class="title text-center text-white my-5">Register</h2>
             </div>
             <div class="col-md-12">
               <div class="card text-center">
-                <div class="card-body text-center">
-                  <form id="needs-validation">
+                <div id="serverStatus" class="card-body text-center">
+                  <form id="registerform" class="needs-validation" method="POST" action="/register.php">
                     <div class="form-row">
                       <div class="form-group col-md-12">
-                        <input type="text" id="validationCustom01" class="form-control" placeholder="Name*"
+                        <input type="text" id="validationCustom01" name= "name" class="form-control" placeholder="Name*"
                           pattern="^.+$" required>
                       </div>
                     </div>
 
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="validationCustom02"
-                          pattern="^.{10,}$" placeholder="Address*(10 char min)" required></div>
+                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address1" id="validationCustom02"
+                          pattern="^.{10,}$" placeholder="Street Name 1*(10 char min)" required></div>
                     </div>
 
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="Landmark"
+                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address2" id="Landmark"
                           placeholder="Address*(10 char min)" pattern="^.{10,}$" required></div>
                     </div>
 
                     <div class="form-row">
                       <div class="form-group col-md-4">
                         <!-- <label for="date-picker">Date of Birth</label> -->
-                        <input type="text" class="form-control" id="date-picker" placeholder="Date of Birth*" required>
+                        <input type="text" class="form-control" id="date-picker" name="dob" placeholder="Date of Birth*" required>
                       </div>
                       <div class="form-group col-md-4">
                         <!-- <label for="Occupation">Occupation</label> -->
-                        <input type="text" class="form-control" id="Age" placeholder="Age*" pattern="^\d{2}$" required>
+                        <input type="text" class="form-control" id="Age" name="age" placeholder="Age*" pattern="^\d{2}$" required>
                       </div>
                       <div class="form-group col-md-4">
                         <!-- <label for="Course">Course Duration</label> -->
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Male</option>
-                            <option>Female</option>
+                        <select class="form-control" name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                           </select>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="qualification"
+                        <input type="text" class="form-control" name="qualification" id="qualification"
                           placeholder="Educational qualifications*" required>
                       </div>
                       <div class="form-group col-md-6">
                         <!-- <label for="Course">Course Duration</label> -->
-                        <input type="text" class="form-control" id="yos" placeholder="Year of study / Completion*"
+                        <input type="text" class="form-control" name="yos" id="yos" placeholder="Year of study / Completion*"
                           pattern="^\d{4}$" required>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="form-group col-md-12">
-                        <input type="text" class="form-control" id="mobile" placeholder="Mobile No*"
+                        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile No*"
                           pattern="^\d{10}$" required>
                       </div>
                     </div>
 
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="email" class="form-control" id="email"
+                      <div class="form-group col-md-12"><input type="email" name="email" class="form-control" id="email"
                           placeholder="Email Id*" pattern="^.*@.*\..*$" required></div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="nop"
+                      <div class="form-group col-md-12"><input type="text" name="nop" class="form-control" id="nop"
                           placeholder="Name of parent/spouse/guardian*" required></div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="occupation"
+                      <div class="form-group col-md-12"><input type="text" name="occupation" class="form-control" id="occupation"
                           placeholder="Occupation*" required></div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="parentAddress"
+                      <div class="form-group col-md-12"><input type="text" class="form-control" name="parentaddress" id="parentAddress"
                           placeholder="Address*" required></div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" id="parentContact"
+                      <div class="form-group col-md-12"><input type="text" name="parentcontact" class="form-control" id="parentContact"
                           placeholder="Contact*" pattern="^\d{10}$" required></div>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-12">
-                          <select class="form-control" id="exampleFormControlSelect1">
-                              <option>Master Diploma in Interior Design</option>
-                              <option>Short Term Certificate in Interior Design</option>
+                          <select class="form-control" name="courses" id="courses">
+                              <option value="Master Diploma in Interior Design">Master Diploma in Interior Design</option>
+                              <option value="Short Term Certificate in Interior Design">Short Term Certificate in Interior Design</option>
                               <option disabled="disabled">Coaching for Entrance</option>
-                              <option>NATA</option>
-                              <option>NIDN</option>
-                              <option>NIFT</option>
-                              <option>VISCOMM</option>
+                              <option value="NATA">NATA</option>
+                              <option value="NIDN">NIDN</option>
+                              <option value="NIFT">NIFT</option>
+                              <option value="VISCOMM">VISCOMM</option>
                             </select>
                       </div>
                     </div>
@@ -998,39 +996,39 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form id="needs-validation">
+                    <form id="contactform" method="POST" action="./contact.php" class="needs-validation">
                       <div class="form-row">
                         <div class="form-group col-md-12">
-                          <input type="text" class="form-control" id="Name" placeholder="Name" pattern="^.{1,}$"
+                          <input type="text" class="form-control" name="name" id="Name" placeholder="Name" pattern="^.{1,}$"
                             required>
                         </div>
                       </div>
 
                       <div class="form-row">
                         <div class="form-group col-md-12">
-                          <input type="text" class="form-control" id="email" placeholder="Email Id*"
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email Id*"
                             pattern="^.*@.*\..*$" required>
                         </div>
                       </div>
 
                       <div class="form-row">
                         <div class="form-group col-md-12">
-                          <input type="text" class="form-control" id="mobile" placeholder="Mobile*" pattern="^\d{10}$"
+                          <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile*" pattern="^\d{10}$"
                             required>
                         </div>
                       </div>
 
                       <div class="form-row">
                         <div class="form-group col-md-12">
-                          <input type="text" class="form-control" id="message" placeholder="message">
+                          <input type="text" class="form-control" name="message" id="message" placeholder="message">
                         </div>
                       </div>
+                      <button type="submit" class="btn btn-primary">Send to us</button>
                     </form>
                   </div>
-                  <div class="modal-footer">
+                  <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send to us</button>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

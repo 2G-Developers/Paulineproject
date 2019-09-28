@@ -91,13 +91,36 @@ $("#main-nav a").on("click", function(e) {
   }
 });
 
-// form validation
+// contact form validation
 (function() {
   "use strict";
   window.addEventListener(
     "load",
     function() {
-      var form = document.getElementById("needs-validation");
+      var form = document.getElementById("contactform");
+      form.addEventListener(
+        "submit",
+        function(event) {
+          if (form.checkValidity() == false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    },
+    false
+  );
+})();
+
+// register form validation
+(function() {
+  "use strict";
+  window.addEventListener(
+    "load",
+    function() {
+      var form = document.getElementById("registerform");
       form.addEventListener(
         "submit",
         function(event) {
@@ -121,3 +144,25 @@ $(".navbar-collapse a").click(function() {
 
 // copyright year
 $("#year").text(new Date().getFullYear());
+
+// Registration Form
+$("#registerform").submit(function(event) {
+  event.preventDefault(); //prevent default action
+  var post_url = $(this).attr("action"); //get form action url
+  var form_data = $(this).serialize(); //Encode form elements for submission
+  console.log(form_data);
+  $.post(post_url, form_data, function(response) {
+    $("#serverStatus").html("form Submited Succesfully");
+  });
+});
+
+// Contact Form
+$("#contactform").submit(function(event) {
+  event.preventDefault(); //prevent default action
+  var post_url = $(this).attr("action"); //get form action url
+  var form_data = $(this).serialize(); //Encode form elements for submission
+  console.log(form_data);
+  $.post(post_url, form_data, function(response) {
+    $("#serverStatus").html("form Submited Succesfully");
+  });
+});
