@@ -22,8 +22,8 @@ function rotateCard(btn) {
   }
 }
 
-// owl carousel
-$(".owl-carousel").owlCarousel({
+// Portfolio owl carousel
+$("#portfolio-carousel").owlCarousel({
   autoplay: true,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
@@ -54,6 +54,43 @@ $(".owl-carousel").owlCarousel({
     },
     1200: {
       items: 5,
+      dots: true
+    }
+  }
+});
+
+// Portfolio owl carousel
+$("#events-carousel").owlCarousel({
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  lazyLoad: true,
+  loop: true,
+  dots: true,
+  // nav: false,
+  margin: 5,
+  responsiveClass: true,
+  // stagePadding: 5,
+  responsive: {
+    0: {
+      items: 1,
+      dots: false,
+      nav: true
+    },
+    485: {
+      items: 2,
+      dots: true
+    },
+    728: {
+      items: 3,
+      dots: true
+    },
+    960: {
+      items: 3,
+      dots: true
+    },
+    1200: {
+      items: 3,
       dots: true
     }
   }

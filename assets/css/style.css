@@ -156,7 +156,7 @@ marquee p {
 }
 
 #home marquee p {
-  color: #2196f3;
+  color: #304ffe;
 }
 
 nav {
@@ -254,8 +254,8 @@ header .nav-item {
 }
 
 #whyidi img {
-  height: 270px;
-  width: 60%;
+  height: 370px;
+  width: 80%;
 }
 
 #whyidi li {
@@ -448,6 +448,16 @@ header .nav-item {
 
 #portfolio img.d-block.img-fluid {
   height: 200px;
+}
+
+/* Events */
+
+#events .container {
+  background: #000;
+}
+
+#events img.d-block.img-fluid {
+  height: 400px;
 }
 
 /* Testimonials */
