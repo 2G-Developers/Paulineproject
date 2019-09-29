@@ -115,10 +115,6 @@ main {
   background-attachment: fixed;
 }
 
-.container {
-  background: #fff;
-}
-
 /* Initialize Variable */
 
 :root {
@@ -141,7 +137,26 @@ main {
   background: rgba(0, 0, 0, 0.8);
 }
 
+marquee p {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
 /* Header */
+
+#home marquee {
+  position: relative;
+  top: 160px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#home marquee p {
+  color: #ff1744;
+}
+
 nav {
   height: 170px;
   background-image: url("../img/bg1.jpg");
