@@ -454,6 +454,7 @@ header .nav-item {
 
 #events .container {
   background: #000;
+  font-family: sans-serif;
 }
 
 #events img.d-block.img-fluid {
