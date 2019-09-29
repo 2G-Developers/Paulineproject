@@ -161,6 +161,7 @@
           <div class="row pt-3">
             <div class="col-md-12 p-0">
               <h2 class="title text-center mt-5"><div class="wow rubberBand" data-wow-duration="2s">Why IDI?</div></h2>
+              <marquee><p style="font-size: 1.5rem;font-weight: bolder;color: #ffeb3b">Easy to <span class="text-white">learn.</span> Easy to <span class="text-white">earn</span></p></marquee>
             </div>
 
             <div class="col-md-6 text-left">
@@ -319,7 +320,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12 col-md-6 py-2">
-              <div class="card shadow-lg mx-auto">
+              <div id="masterdesign" class="card shadow-lg">
                 <div class="inner">
                   <img class="card-img-top" style="height: 200px;"
                     src="./assets/img/course/picture for master diploma course.JPG"
@@ -336,7 +337,7 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6 py-2">
-              <div class="card shadow-lg mx-auto">
+              <div id="shortterm" class="card shadow-lg">
                 <div class="inner">
                   <img class="card-img-top" style="height: 200px;"
                     src="./assets/img/course/picture for certficate course.JPG"
@@ -378,8 +379,8 @@
                           style="width: 100%;border-radius: initial;">
                       </p>
                       <h4 class="mb-3 card-title">NATA</h4>
-                      <p class="card-text" style="color: #2196f3;">Course Duration</p>
-                      <p class="card-text" style="color: #2196f3;"> 6 months/ 1 year</p>
+                      <p class="card-text">Course Duration</p>
+                      <p class="card-text"> 6 months/ 1 year</p>
                       <a class="btn btn-dark text-white btn-sm" onclick="rotateCard(this);"><i class="fa fa fa-redo-alt"></i></a>
                     </div>
 
@@ -411,8 +412,8 @@
                       <h4 class="card-title">
                         NID
                       </h4>
-                      <p class="card-text" style="color: #2196f3;">Course Duration</p>
-                      <p class="card-text" style="color: #2196f3;"> 6 months/ 1 year</p>
+                      <p class="card-text">Course Duration</p>
+                      <p class="card-text"> 6 months/ 1 year</p>
                       <a class="btn btn-dark text-white btn-sm" onclick="rotateCard(this);"><i class="fa fa-redo-alt"></i></a>
                     </div>
 
@@ -448,8 +449,8 @@
                       <h4 class="card-title">
                         NIFT
                       </h4>
-                      <p class="card-text" style="color: #2196f3;">Course Duration</p>
-                      <p class="card-text" style="color: #2196f3;"> 6 months/ 1 year</p>
+                      <p class="card-text">Course Duration</p>
+                      <p class="card-text"> 6 months/ 1 year</p>
                       <a class="btn btn-dark text-white btn-sm" onclick="rotateCard(this);"><i class="fa fa-redo-alt"></i></a>
                     </div>
 
@@ -484,8 +485,8 @@
                       <h4 class="card-title">
                         VISCOMM
                       </h4>
-                      <p class="card-text" style="color: #2196f3;">Course Duration</p>
-                      <p class="card-text" style="color: #2196f3;"> 6 months/ 1 year</p>
+                      <p class="card-text">Course Duration</p>
+                      <p class="card-text"> 6 months/ 1 year</p>
                       <a class="btn btn-dark text-white btn-sm" onclick="rotateCard(this);"><i class="fa fa-redo-alt"></i></a>
                     </div>
 
@@ -537,7 +538,8 @@
 
           <div class="row pb-4 py-3">
             <div class="col-md-12 p-0">
-                <h2 class="title text-center text-white my-5 "><div class="wow rubberBand" data-wow-duration="2s">Our Portfolio</div></h2>
+                <h2 class="title text-center text-white mt-5"><div class="wow rubberBand" data-wow-duration="2s">Our Portfolio</div></h2>
+                <marquee><p class="text-white" style="font-size: 1.5rem;font-weight: bolder;">Creativity is intelligence having fun- Albert Einstein</p></marquee>
             </div>
             <div class="col-md-12">
               <div class="owl-carousel owl-theme baguetteBoxTwo">
@@ -827,83 +829,94 @@
               <div class="card text-center">
                 <div id="serverStatus" class="card-body text-center">
                   <form id="registerform" class="needs-validation" method="POST" action="/register.php">
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
-                        <input type="text" id="validationCustom01" name= "name" class="form-control" placeholder="Name*"
+                    <div class="form-row text-left">
+                      <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name= "name" class="form-control" placeholder="Name*"
                           pattern="^.+$" required>
                       </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address1" id="validationCustom02"
-                          pattern="^.{10,}$" placeholder="Street Name 1*(10 char min)" required></div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address2" id="Landmark"
-                          placeholder="Address*(10 char min)" pattern="^.{10,}$" required></div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <!-- <label for="date-picker">Date of Birth</label> -->
+                      <div class="form-group col-md-2">
+                        <label for="date-picker">Date of Birth</label>
                         <input type="text" class="form-control" id="date-picker" name="dob" placeholder="Date of Birth*" required>
                       </div>
-                      <div class="form-group col-md-4">
-                        <!-- <label for="Occupation">Occupation</label> -->
+                      <div class="form-group col-md-2">
+                        <label for="Age">Age</label>
                         <input type="text" class="form-control" id="Age" name="age" placeholder="Age*" pattern="^\d{2}$" required>
                       </div>
-                      <div class="form-group col-md-4">
-                        <!-- <label for="Course">Course Duration</label> -->
+                      <div class="form-group col-md-2">
+                        <label for="gender">Gender</label>
                         <select class="form-control" name="gender" id="gender">
+                            <option value="" selected disabled>Please select</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                           </select>
                       </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row text-left">
+                        <label for="address1">Street Name</label>
+                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address1" id="address1"
+                          pattern="^.{10,}$" placeholder="Street Name*(10 char min)" required></div>
+                    </div>
+
+                    <div class="form-row text-left">
+                        <label for="Landmark">Address</label>
+                      <div class="form-group col-md-12"><input type="text" class="form-control" name="address2" id="Landmark"
+                          placeholder="Address*(10 char min)" pattern="^.{10,}$" required></div>
+                    </div>
+
+                    <div class="form-row text-left">
                       <div class="form-group col-md-6">
+                          <label for="qualification">Educational qualifications</label>
                         <input type="text" class="form-control" name="qualification" id="qualification"
                           placeholder="Educational qualifications*" required>
                       </div>
                       <div class="form-group col-md-6">
-                        <!-- <label for="Course">Course Duration</label> -->
+                        <label for="yos">Year of study / Completion</label>
                         <input type="text" class="form-control" name="yos" id="yos" placeholder="Year of study / Completion*"
                           pattern="^\d{4}$" required>
                       </div>
                     </div>
 
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
+                    <div class="form-row text-left">
+                      <div class="form-group col-md-6">
+                          <label for="mobile">Mobile No</label>
                         <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile No*"
                           pattern="^\d{10}$" required>
                       </div>
+                      <div class="form-group col-md-6">
+                          <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email"
+                        placeholder="Email Id*" pattern="^.*@.*\..*$" required></div>
                     </div>
 
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="email" name="email" class="form-control" id="email"
-                          placeholder="Email Id*" pattern="^.*@.*\..*$" required></div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" name="nop" class="form-control" id="nop"
+                    <div class="form-row text-left">
+                      <div class="form-group col-md-6">
+                          <label for="nop">Name of parent/spouse/guardian</label>
+                        <input type="text" name="nop" class="form-control" id="nop"
                           placeholder="Name of parent/spouse/guardian*" required></div>
+                      <div class="form-group col-md-6">
+                          <label for="occupation">Occupation</label>
+                        <input type="text" name="occupation" class="form-control" id="occupation"
+                        placeholder="Occupation*" required></div>
                     </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" name="occupation" class="form-control" id="occupation"
-                          placeholder="Occupation*" required></div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" class="form-control" name="parentaddress" id="parentAddress"
+
+                    <div class="form-row text-left">
+                      <div class="form-group col-md-12">
+                          <label for="parentAddress">Address</label>
+                        <input type="text" class="form-control" name="parentaddress" id="parentAddress"
                           placeholder="Address*" required></div>
                     </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12"><input type="text" name="parentcontact" class="form-control" id="parentContact"
+
+                    <div class="form-row text-left">
+                        <div class="form-group col-md-6">
+                            <label for="parentContact">Contact</label>
+                          <input type="text" name="parentcontact" class="form-control" id="parentContact"
                           placeholder="Contact*" pattern="^\d{10}$" required></div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
+                      <div class="form-group col-md-6">
+                          <label for="courses">Courses Opt for</label>
                           <select class="form-control" name="courses" id="courses">
+                              <option value="" selected disabled>Please select</option>
                               <option value="Master Diploma in Interior Design">Master Diploma in Interior Design</option>
                               <option value="Short Term Certificate in Interior Design">Short Term Certificate in Interior Design</option>
                               <option disabled="disabled">Coaching for Entrance</option>

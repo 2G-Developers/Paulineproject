@@ -20,6 +20,15 @@
     height: 50vh;
   }
 
+  /* courses */
+  #courses .row:last-child #masterdesign {
+    margin-left: auto !important;
+  }
+
+  #courses .row:last-child #shortterm {
+    margin-right: auto !important;
+  }
+
   /* testimonials */
 
   .photo-gallery h2 {
@@ -56,6 +65,17 @@
   /* whyidi */
   #whyidi img {
     width: 100%;
+  }
+
+  /* courses */
+  #courses .row:last-child #masterdesign {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #courses .row:last-child #shortterm {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* footer */
@@ -95,6 +115,17 @@
 
   #whyidi img {
     width: 100%;
+  }
+
+  /* courses */
+  #courses .row:last-child #masterdesign {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #courses .row:last-child #shortterm {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* portfolio */

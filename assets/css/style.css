@@ -1,20 +1,20 @@
 /* Google font */
 hr.style-three {
-height: 30px;
-border-style: solid;
-border-color: white;
-border-width: 1px 0 0 0;
-border-radius: 20px;
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
 }
 hr.style-three:before {
-display: block;
-content: "";
-height: 30px;
-margin-top: -31px;
-border-style: solid;
-border-color: white;
-border-width: 0 0 1px 0;
-border-radius: 20px;
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cookie|Courgette|Sacramento&display=swap");
@@ -291,6 +291,14 @@ header .nav-item {
   /* border-bottom-right-radius: 3rem; */
   /* border-top-left-radius: 3rem; */
   width: 18rem;
+}
+
+#courses .row:last-child #masterdesign {
+  margin-left: auto;
+}
+
+#courses .row:last-child #shortterm {
+  margin-right: auto;
 }
 
 #courses .row:last-child .card-title {
