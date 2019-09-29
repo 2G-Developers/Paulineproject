@@ -19,6 +19,7 @@ hr.style-three:before {
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cookie|Courgette|Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC|Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
 
 * {
   box-sizing: border-box;
@@ -129,6 +130,7 @@ main {
   --AlegreyaSC: "Alegreya SC", serif;
   --Merriweather: "Merriweather", serif;
   --light-black: #2e2c2caf;
+  --Allura: "Allura", cursive;
   --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
   --light-gray: rgba(255, 255, 255, 0.3);
 }
@@ -154,7 +156,7 @@ marquee p {
 }
 
 #home marquee p {
-  color: #ff1744;
+  color: #2196f3;
 }
 
 nav {
@@ -432,6 +434,11 @@ header .nav-item {
 
 #portfolio .container {
   background: #000;
+}
+
+#portfolio marquee p {
+  font-family: var(--Allura) !important;
+  font-weight: 200 !important;
 }
 
 #baguetteBox-overlay .full-image figcaption {
