@@ -162,22 +162,20 @@ main {
   background-position: left 15%;
   background-attachment: fixed;
 }
-<<<<<<< HEAD
-=======
 .applemain
 {
 
   background-image: url("../img/bg1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  background-size: contain;
   -o-background-size: cover;
   background-repeat: no-repeat; /* Determine what direction the image will repeat */
   background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
   background-attachment: scroll; /* use with "fixed" to make it scroll with page */
 }
 
->>>>>>> parent of 0615553... changes
+
 
 /* Initialize Variable */
 
@@ -232,6 +230,17 @@ nav {
   background-repeat: no-repeat; /* Determine what direction the image will repeat */
   background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
   background-attachment: fixed; /* use with "fixed" to make it scroll with page */
+}
+.applenav {
+  height: 170px;
+  background-image: url("../img/bg1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat; /* Determine what direction the image will repeat */
+  background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
+  background-attachment: scroll; /* use with "fixed" to make it scroll with page */
 }
 .bd-example {
   position: relative;
