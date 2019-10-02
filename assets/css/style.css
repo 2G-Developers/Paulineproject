@@ -162,6 +162,7 @@ marquee p {
 nav {
   height: 170px;
   background-image: url("../img/bg1.jpg");
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat; /* Determine what direction the image will repeat */
   background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
