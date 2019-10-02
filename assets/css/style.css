@@ -415,6 +415,7 @@ header .nav-item {
   text-align: center;
   transition: transform 1.2s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 #coaching .card-body,
@@ -428,6 +429,7 @@ header .nav-item {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 #coaching .hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -455,6 +457,7 @@ header .nav-item {
 .flip-card-back {
   color: #000;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* portfolio */
