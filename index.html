@@ -1256,7 +1256,7 @@
    </script>
 
    <script>
-   (function() {
+   $(window).on('load', function() {
      if(navigator.userAgent.indexOf("Chrome") != -1 )
      {
 
@@ -1272,7 +1272,7 @@
      {
           alert('Firefox');
      }
- }())
+ });
     </script>
 
 </body>
