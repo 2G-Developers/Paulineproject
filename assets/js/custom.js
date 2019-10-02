@@ -1,11 +1,5 @@
-$(window).on('load', function() {
-   $("#cover").hide();
-});
 $(document).ready(function() {
-    
   //Preloader
-
-  
   $(window).on("load", function() {
     preloaderFadeOutTime = 800;
     function hidePreloader() {
@@ -13,7 +7,6 @@ $(document).ready(function() {
       preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
-      
   });
 
   // form datepicker

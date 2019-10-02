@@ -28,8 +28,7 @@
   <title>Innovision Design Institute</title>
 </head>
 
-<body >
-    <div id="cover"></div>
+<body>
   <div class="spinner-wrapper">
     <div class="spinner">
       <div class="double-bounce1"></div>
@@ -82,7 +81,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="2g-dev"id="main-main">
       <!-- Sticky container -->
       <div class="sticky-container">
           <a href="https://www.facebook.com/Innovision-design-institute-107181497339381/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1080,8 +1079,8 @@
                 <div class="card-body">
                   <div class="row p-0">
                     <div class="col-md-4">
-                      <a class="bg-white px-3 py-2 rounded text-dark mb-2 d-inline-block" data-toggle="modal"
-                        data-target="#exampleModalCenter1"><i class="fa fa-map-marker"></i></a>
+                      <button class="bg-white px-3 py-2 rounded text-dark mb-2 d-inline-block" data-toggle="modal"
+                        data-target="#exampleModalCenter1"><i class="fa fa-map-marker"></i></button>
                       <p>Ram Mansion, 3 C, III Floor, 37I/I-A, Pantheon Road, Egmore, Chennai - 600 008, Tamilnadu, India</p>
 
                     </div>
@@ -1254,9 +1253,8 @@
            wow.init();
        });
    </script>
-
    <script>
-   $(window).on('load', function() {
+   $(document).ready(function() {
      if(navigator.userAgent.indexOf("Chrome") != -1 )
      {
 
@@ -1264,7 +1262,7 @@
      else if(navigator.userAgent.indexOf("Safari") != -1)
      {
        var element = document.getElementById("main-main");
-    element.classList.add("applemain");
+  element.classList.add("applemain");
   var element = document.getElementById("main-nav")
   element.classList.add("applenav");
      }
