@@ -12,6 +12,15 @@
 
   /* carousel */
 
+  .bd-example #overlay {
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+  }
+
+  .bd-example #overlay p {
+    line-height: 1rem;
+  }
+
   .bd-example .carousel-item {
     height: 50vh;
   }
@@ -53,6 +62,15 @@
   }
 
   /* carousel */
+
+  .bd-example #overlay {
+    padding-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  .bd-example #overlay p {
+    line-height: 1rem;
+  }
 
   .bd-example .carousel-item {
     height: 50vh;
@@ -102,6 +120,15 @@
   }
 
   /* carousel */
+
+  .bd-example #overlay p {
+    line-height: 0.9rem;
+  }
+
+  .bd-example #overlay {
+    padding-top: 0.2rem;
+    padding-left: 0.4rem;
+  }
 
   .bd-example .carousel-item {
     height: 50vh;
