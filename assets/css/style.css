@@ -227,10 +227,11 @@ nav {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-repeat: no-repeat; /* Determine what direction the image will repeat */
-  background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
-  background-attachment: fixed; /* use with "fixed" to make it scroll with page */
+  background-repeat: no-repeat;
+  background-position: left 15%;
+  background-attachment: fixed;
 }
+
 .bd-example {
   position: relative;
   margin-top: 150px;
