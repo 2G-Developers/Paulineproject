@@ -1,4 +1,3 @@
-#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #fff; z-index:9999;}
 /* Google font */
 hr.style-three {
   height: 30px;
@@ -162,20 +161,6 @@ main {
   background-position: left 15%;
   background-attachment: fixed;
 }
-.applemain
-{
-
-  background-image: url("../img/bg1.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: contain;
-  -o-background-size: cover;
-  background-repeat: no-repeat; /* Determine what direction the image will repeat */
-  background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
-  background-attachment: scroll; /* use with "fixed" to make it scroll with page */
-}
-
-
 
 /* Initialize Variable */
 
@@ -231,17 +216,6 @@ nav {
   background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
   background-attachment: fixed; /* use with "fixed" to make it scroll with page */
 }
-.applenav {
-  height: 170px;
-  background-image: url("../img/bg1.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat; /* Determine what direction the image will repeat */
-  background-position: left 15%; /* Where the image will be positioned relative to "top, right, bottom, and/or left */
-  background-attachment: scroll; /* use with "fixed" to make it scroll with page */
-}
 .bd-example {
   position: relative;
   margin-top: 150px;
@@ -249,19 +223,13 @@ nav {
 
 .bd-example #overlay {
   position: absolute;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  padding-left: 1.5rem;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 50%;
   background: #000;
 }
 
 .bd-example #overlay p {
   margin: 0;
-  line-height: 1.9rem;
   color: #fff;
   font-size: 1vmax;
   font-family: sans-serif;
