@@ -18,6 +18,7 @@
 
   .bd-example #overlay {
     padding-top: 1rem;
+    padding-bottom: 1.4rem;
     padding-left: 1.2rem;
   }
 
@@ -75,6 +76,7 @@
 
   .bd-example #overlay {
     padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     padding-left: 0.8rem;
   }
 
@@ -147,6 +149,7 @@
 
   .bd-example #overlay {
     padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     padding-left: 0.4rem;
   }
 
