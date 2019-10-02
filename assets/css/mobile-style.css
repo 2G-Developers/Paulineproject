@@ -1,5 +1,9 @@
 @media only screen and (max-width: 768px) {
-  /* navbar */
+  /* sticky */
+  .sticky-container a {
+    padding: 12px;
+    font-size: 15px;
+  }
 
   /* navbar */
   nav ul {
@@ -56,8 +60,14 @@
     -o-background-size: contain;
   }
 
+  /* sticky */
+  .sticky-container a {
+    padding: 8px;
+    font-size: 10px;
+  }
+
   /* navbar */
-  nav ul {
+  #main-nav ul {
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -112,6 +122,12 @@
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;
+  }
+
+  /* sticky */
+  .sticky-container a {
+    padding: 8px;
+    font-size: 10px;
   }
 
   /* navbar */
