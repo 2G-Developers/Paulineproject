@@ -228,8 +228,8 @@ nav {
   background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 15%;
-  background-attachment: fixed;
+  background-position: left 5%;
+  background-attachment: scroll;
 }
 
 .bd-example {
