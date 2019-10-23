@@ -17,6 +17,8 @@ Password:
 <form action="fileUpload.php" enctype="multipart/form-data" method="post">
 Select image :
 <input type="file" name="file1"><br/>
+Caption:
+<input type="text" name="cap"><br/>
 Password:
 <input type="text" name="pass1"><br/>
 <input type="submit" value="Upload" name="Submit2"> <br/>
@@ -47,10 +49,16 @@ if(isset($_POST['Submit2']))
 { 
 	if(strcmp($_POST['pass1'],'CVy9bqnTfcpu')===0 )
 	{
+		
 		$filepath = "./assets/img/events/" . $_FILES["file1"]["name"];
 		echo $_FILES["file1"]["name"];
 		if( copy($_FILES["file1"]["tmp_name"],  $filepath))
 		{
+			$file_name="./assets/captions/events.txt";
+			$fp = fopen($file_name, 'a');//opens file in append mode  
+			fwrite($fp, $filepath."~".$_POST['cap']."\n");   
+			fclose($fp);  
+			 
 			echo " file copied to events";
 		}
 		else{

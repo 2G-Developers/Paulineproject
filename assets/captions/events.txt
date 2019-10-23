@@ -1,0 +1,8 @@
+./assets/img/events/acrylics 5.jpg~Test 1
+./assets/img/events/acrylics 4.jpg~Test2
+./assets/img/events/acrylics 3.jpg~Test3
+./assets/img/events/Acrylic painting workshop.jpg~Test4
+./assets/img/events/acrylics 5.JPG~Test5
+./assets/img/events/acrylics 4.JPG~Test6
+./assets/img/events/acrylics 3.JPG~Test7
+./assets/img/events/Acrylic painting workshop.JPG~Test8

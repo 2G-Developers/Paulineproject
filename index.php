@@ -895,22 +895,38 @@
             <div class="row pb-4 py-3">
               <div class="col-md-12 p-0">
                   <h2 class="title text-center text-white mt-5"><div class="wow rubberBand" data-wow-duration="2s">Events</div></h2>
-                  <h4 class="text-center text-white mt-4">Workshop on Acrylic painting</h4>
+                  <h4 class="text-center text-white mt-4"></h4>
               </div>
               <div class="col-md-12">
                 <div id="events-carousel" class="owl-carousel owl-theme baguetteBoxTwo">
-               <?php $dir ="./assets/img/events/*" ;
+               <?php 
+			   $dir ="./assets/img/events/*" ;
+			  
 					$images=glob($dir);
 					$i=0;
 					$act='active';
+					$file_name="./assets/captions/events.txt";
+					$file = fopen($file_name,"r");
+
+						while(! feof($file))
+						  {
+							$line =  fgets($file);
+							list($img, $cap ) = split('~', $line);
+						  $caption[$img]=$cap;
+						  }
+
+						fclose($file);
+					
 					foreach($images as $image):
+					
 					?>
                   <div class="item">
                     <a href="<?php echo $image?>"
                       data-at-450="<?php echo $image?>"
                       data-at-800="<?php echo $image?>"
                       data-at-1366="<?php echo $image?>"
-                      data-at-1920="<?php echo $image?>">
+                      data-at-1920="<?php echo $image?>"
+					  data-caption="<?php echo $caption[$image]?>">
                       <img class="d-block img-thumbnail"
                         src="<?php echo $image?>" alt="Acrylic painting workshop">
                     </a>
